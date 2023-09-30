@@ -1,152 +1,153 @@
-*{
-   /*font: 500 12px "Roboto",arial,sans-serif;*/ 
-  font-family: 'Roboto', sans-serif;
-
-}
-.icon-buscador{
-    display: inline-block;
-    width: 24px;
-    height: 24px;
+* {
+    font-family: 'Roboto', sans-serif;
 }
 
-ul{
-    list-style: none;
-}
-header ul li{
-    display: inline;
-    padding: 4px;
-    /*padding puedes añadir espacio en orden como manecillas del reloj
-    padding 8px, 24px, 40px, 60px pudes poner auto y te pone el automatico que traía*/
-    text-align: right;
-
-}
-header ul li {
-    flex-direction: column;
-    align-items:end; /* Centra el contenido verticalmente */
-    justify-content:right; /* Centra el contenido horizontalmente */
+body {
+    padding: 0px;
+    margin: 0px;
 }
 
-/*Más experimento */
-
-
-header {
-    display: flex;
-    justify-content: flex-end; /* Alinea la lista a la derecha */
-    padding: 10px; /* Añade un espacio alrededor de la lista */
-}
-header img{
-    height: 40%;
-    margin: 0%;
-    padding: 0%;
-    border: 0;
-
-}
 
 ul {
+    list-style-type: none;
+}
+
+header ul{
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-li {
-    margin-right: 20px; /* Espacio entre los elementos de la lista */
-    
-}
-
-
-
-
-/*-*/
-
-/*-Esto es experimental*/
-
-/* main{
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    /*align-items: center;  Centra verticalmente */
-    /* height: 100vh; Asegura que todo el viewport se use para centrar */
-    /* text-align: center; Centra el contenido del main horizontalmente */
-    /* flex-direction: column; */
-    /*align-items: center;  Centra el contenido verticalmente */
-/*} */
+    align-items: center;
+    justify-content: flex-end;
+}
+header ul li{
+    margin-right: 20px;
+}
+.icon-gris {
+    filter: grayscale(100%); /* Aplica el filtro de escala de grises al 100% */
+}
+
+header img.perfil{
+    height: 50px;
+    border-radius: 50%;
+}
+
 
 main {
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el contenido verticalmente */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    height: 50vh; /* Ocupa toda la altura del viewport */
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-main section {
-    text-align: center; /* Centra el contenido horizontalmente */
-    margin-bottom: 20px; /* Espacio entre las secciones */
-}
 
-img {
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen al contenedor */
-}
-
-article {
+.btn-buscador {
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar una sombra */
     display: flex;
-    /* flex-direction: column; */
-    align-items: center; /* Centra el contenido verticalmente */
+    align-items: center;
+    padding: 4px 8px;
 }
 
-button {
-    margin: 10px ; /* Espacio entre los botones */
+#input-buscador {
+    outline: none;
+    border: none;
+    width: 400px;
 }
 
-
-
-/* Estilos para el contenedor de la barra de búsqueda */
-article {
-    display: flex;
-    flex-direction: row; /* Organiza los elementos en fila */
-    align-items: center; /* Centra verticalmente los elementos */
-    justify-content: center; /* Centra horizontalmente los elementos */
-}
-
-/* Estilos para los íconos */
-.icon-buscador {
-    flex: 0 0 auto; /* No permite que los íconos se estiren */
-    margin: 0 10px; /* Espacio entre los íconos */
-}
-
-/* Estilos para la barra de búsqueda */
-input[type="text"] {
-    flex: 1; /* Ocupa todo el espacio restante disponible */
-    padding: 10px;
-    border: 1px solid #ccc;
+.Botoones {
+    border: none;
+    background-color: rgb(215, 244, 163);
     border-radius: 5px;
+    margin: 11px 4px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
-
-/* Estilos para los botones */
-button {
-    margin-left: 10px; /* Espacio entre los botones */
-}
-
-
-
-
-
-footer{
-    
-    background: linear-gradient(#e9edc9, #CCD5AE); /* Crea un degradado */
-    padding: 20px; /* Añade un espacio alrededor del contenido del footer */
-}
-
-footer ul{
+.icon-buscador {
+        /*
+    usamos display inline block porque queremos que estén pegaditos la parte de inline y block para que las propiedades de width y heigth sigan haciend efecto y hagn mi icono pequeño
+    */
     display: inline-block;
-    margin: 15px 12px;
+    width: 28px;
+    height: 28px;
+    padding: 8px;
+}
+
+
+footer {
+    height: auto;
+    background: linear-gradient(#f3f5e1, #CCD5AE);
+    /* Crea un degradado */
+    padding: 20px 0;
     text-align: center;
    
 }
-footer ul li{
-    display: inline;
-    padding: 15px;
 
+footer section{
+    display: flex;
+    
+   
+    padding: 0 20px;
+    align-items: center;
 }
 
+footer ul {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 12px;
+}
+
+footer ul li {
+    /* padding: 8px; */
+    /* padding: 8px 24px; */
+    /* padding: 8px 24px 40px 60px; */
+    margin:  0;
+    display: inline;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+footer ul li a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.2s;
+}
+footer ul li a:hover {
+    color: #305f00;
+}
+footer section:last-child ul li {
+    text-align: right;
+}
+footer section:first-child ul li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+/*
+
+main {
+    height: ;
+}
+
+align text
+
+float
+
+unidades de medida
+
+
+
+*/

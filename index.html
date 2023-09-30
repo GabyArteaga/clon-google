@@ -5,23 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <link rel="icon" href="assets/google-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <!-- link:icon => cambiar el href por el tuyo -->
+    <link rel="icon" href="assets/chrome-icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <!--Listas horizontales: display inline-->
+        <!-- Listas horizontales: display inline, alinear -->
         <ul>
             <li>Gmail</li>
             <li>Imágenes</li>
-            <li> Ícono</li>
             <li>
-                <img src="assets/foto-perfil-circular.png" alt="Foto perfil">
+                <div class="icon-buscador">
+                    <div class="icon-gris">
+                        <svg class="gb_i" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+                    </div>
+                </div>
             </li>
+            <li><img src="assets/foto-perfil-circular.png" alt="Foto perfil" height="50px" class="perfil"></li>
         </ul>
     </header>
     <main>
@@ -29,7 +37,7 @@
             <img src="assets/doodle-michiyo-tsujimura.png" alt="Logo" height="200">
         </section>
         <section>
-            <article>
+            <article class="btn-buscador">
                 <div class="icon-buscador">
                     <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path
@@ -39,12 +47,13 @@
                 </div>
                 <input type="text" name="input-buscador" id="input-buscador">
                 <div class="icon-buscador">
-                    <svg class="goxjub" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="Nw0Dr" alt="Búsqueda por voz" focusable="false" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path fill="#4285f4"
                             d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z">
                         </path>
                         <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
-                        <path fill="#fbbc04"
+                        <path fill="#fbbc05"
                             d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z">
                         </path>
                         <path fill="#ea4335"
@@ -53,7 +62,8 @@
                     </svg>
                 </div>
                 <div class="icon-buscador">
-                    <svg class="Gdd5U" focusable="false" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="b4yCbb" alt="Búsqueda con cámara" focusable="false" viewBox="0 0 192 192"
+                        xmlns="http://www.w3.org/2000/svg">
                         <rect fill="none" height="192" width="192"></rect>
                         <g>
                             <circle fill="#34a853" cx="144.07" cy="144" r="16"></circle>
@@ -61,7 +71,7 @@
                             <path fill="#ea4335"
                                 d="M24,135.2c0,18.11,14.69,32.8,32.8,32.8H96v-16l-40.1-0.1c-8.8,0-15.9-8.19-15.9-17.9v-18H24V135.2z">
                             </path>
-                            <path fill="#fbbc04"
+                            <path fill="#fbbc05"
                                 d="M168,72.8c0-18.11-14.69-32.8-32.8-32.8H116l20,16c8.8,0,16,8.29,16,18v30h16V72.8z">
                             </path>
                             <path fill="#4285f4"
@@ -71,11 +81,12 @@
                     </svg>
                 </div>
             </article>
-            <article>
-                <button>Buscar con Google</button>
-                <button>Voy a tener suerte</button>
-            </article>
+           
         </section>
+        <article>
+            <button class="Botoones">Buscar con Google</button>
+            <button class="Botoones">Voy a tener suerte</button>
+        </article>
     </main>
     <footer>
         <section>
@@ -83,17 +94,18 @@
                 <li>México</li>
             </ul>
         </section>
+        <hr />
         <section>
             <ul>
-                <li>Sobre Google</li>
-                <li>Publicidad</li>
-                <li>Negocios</li>
-                <li>Cómo funciona la búsqueda</li>
+                <li><a href="#">Sobre Google</a></li>
+                <li><a href="#">Publicidad</a></li>
+                <li><a href="#">Negocios</a></li>
+                <li><a href="#">Cómo funciona la Busqueda</a></li>
             </ul>
             <ul>
-                <li>Privacidad</li>
-                <li>Condiciones</li>
-                <li>Preferencias</li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Condiciones</a></li>
+                <li><a href="#">Preferencias</a></li>
             </ul>
         </section>
     </footer>
